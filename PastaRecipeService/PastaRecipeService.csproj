@@ -7,8 +7,8 @@
     <ProjectGuid>{9B13C2BC-F744-4A6D-9390-0CD82A6E314B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OutsideInHexagonal</RootNamespace>
-    <AssemblyName>OutsideInHexagonal</AssemblyName>
+    <RootNamespace>PastaRecipeService</RootNamespace>
+    <AssemblyName>PastaRecipeService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

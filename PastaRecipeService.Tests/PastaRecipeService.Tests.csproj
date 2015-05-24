@@ -7,8 +7,8 @@
     <ProjectGuid>{97724733-6618-438D-AD66-A5BD1733278B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OutsideInHexagonal.Tests</RootNamespace>
-    <AssemblyName>OutsideInHexagonal.Tests</AssemblyName>
+    <RootNamespace>PastaRecipeService.Tests</RootNamespace>
+    <AssemblyName>PastaRecipeService.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,4 +1,4 @@
-﻿namespace PastaRecipeService.Tests
+﻿namespace PastaRecipeService.Tests.Domain
 {
     using NFluent;
 

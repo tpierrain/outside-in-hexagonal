@@ -1,10 +1,10 @@
-﻿namespace PastaRecipeService.Tests.Domain
+﻿namespace PastaRecipe.Tests.Domain
 {
     using NFluent;
 
     using NUnit.Framework;
 
-    using PastaRecipeService.Domain;
+    using PastaRecipe.Domain;
 
     [TestFixture]
     public class RecipeServiceTests

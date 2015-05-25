@@ -1,4 +1,4 @@
-namespace PastaRecipeService.Domain
+namespace PastaRecipe.Domain
 {
     using System.Collections.Generic;
 

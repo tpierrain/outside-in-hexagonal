@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastaRecipeService", "PastaRecipeService\PastaRecipeService.csproj", "{9B13C2BC-F744-4A6D-9390-0CD82A6E314B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastaRecipe", "PastaRecipe\PastaRecipe.csproj", "{9B13C2BC-F744-4A6D-9390-0CD82A6E314B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastaRecipeService.Tests", "PastaRecipeService.Tests\PastaRecipeService.Tests.csproj", "{97724733-6618-438D-AD66-A5BD1733278B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastaRecipe.Tests", "PastaRecipe.Tests\PastaRecipe.Tests.csproj", "{97724733-6618-438D-AD66-A5BD1733278B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBDA917F-C3E1-4559-9FD7-087D52360507}"
 	ProjectSection(SolutionItems) = preProject

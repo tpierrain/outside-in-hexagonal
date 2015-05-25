@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PastaRecipeService.Tests
+﻿namespace PastaRecipeService.Tests
 {
     using NFluent;
 
     using NUnit.Framework;
+
+    using PastaRecipeService.Domain;
 
     [TestFixture]
     public class PastaRecipeTests

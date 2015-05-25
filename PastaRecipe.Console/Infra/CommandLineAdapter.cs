@@ -6,13 +6,13 @@ namespace PastaRecipe.Infra
 
     public class CommandLineAdapter
     {
-        private readonly RecipeService pastaRecipeService;
+        private readonly IProvideRecipes pastaRecipeService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CommandLineAdapter"/> class.
         /// </summary>
         /// <param name="pastaRecipeService">The pasta recipe service.</param>
-        public CommandLineAdapter(RecipeService pastaRecipeService)
+        public CommandLineAdapter(IProvideRecipes pastaRecipeService)
         {
             this.pastaRecipeService = pastaRecipeService;
         }

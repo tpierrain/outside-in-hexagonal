@@ -3,7 +3,7 @@ namespace PastaRecipe.Domain
     using System.Collections.Generic;
     using System.Linq;
 
-    public class RecipeService
+    public class RecipeService : IProvideRecipes
     {
         private Dictionary<string, PastaRecipe> recipes;
 

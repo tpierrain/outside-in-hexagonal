@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4F2DDC
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastaRecipe.Console", "PastaRecipe.Console\PastaRecipe.Console.csproj", "{D5FD68B8-331E-443B-B643-67BC10A86520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{97724733-6618-438D-AD66-A5BD1733278B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97724733-6618-438D-AD66-A5BD1733278B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97724733-6618-438D-AD66-A5BD1733278B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FD68B8-331E-443B-B643-67BC10A86520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FD68B8-331E-443B-B643-67BC10A86520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FD68B8-331E-443B-B643-67BC10A86520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FD68B8-331E-443B-B643-67BC10A86520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

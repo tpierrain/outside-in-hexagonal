@@ -1,6 +1,8 @@
 namespace PastaRecipeService.Domain
 {
+    using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class RecipeService
     {
@@ -26,6 +28,21 @@ namespace PastaRecipeService.Domain
         public PastaRecipe GetRecipeFor(string pastaName)
         {
             return this.recipes[pastaName];
+        }
+
+        public IEnumerable<string> FindPastaWithRecipeIncludingTheIngredient(string ingredientName)
+        {
+            var result = new List<string>();
+
+            foreach (var recipe in this.recipes.Values)
+            {
+                if (recipe.Ingredients.Contains(ingredientName))
+                {
+                    result.Add(recipe.PastaName);
+                }
+            }
+
+            return result;
         }
     }
 }

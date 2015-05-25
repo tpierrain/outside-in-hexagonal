@@ -17,5 +17,12 @@
             Check.That(gnocchiRecipe.Ingredients).Contains("eggs", "potatoes", "flour");
             Check.That(gnocchiRecipe.PastaName).IsEqualTo("gnocchi");
         }
+
+        [Test]
+        public void ShouldProvideTheListOfAllPastaGivenAnIngredient()
+        {
+            var recipeService = new RecipeService();
+            Check.That(recipeService.FindPastaWithRecipeIncludingTheIngredient("eggs")).Contains("gnocchi", "spaghetti", "spinach farfalle", "tagliatelle");
+        }
     }
 }

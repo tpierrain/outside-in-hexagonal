@@ -40,5 +40,9 @@ namespace PastaRecipe.Console.Infra
 
             return result;
         }
+
+        public void AddRecipe(PastaRecipe newRecipe)
+        {
+        }
     }
 }

@@ -7,5 +7,7 @@ namespace PastaRecipe.Domain
         PastaRecipe GetRecipeFor(string pastaName);
 
         IEnumerable<string> FindPastaWithRecipeIncludingTheIngredient(string ingredientName);
+
+        void AddRecipe(PastaRecipe newRecipe);
     }
 }

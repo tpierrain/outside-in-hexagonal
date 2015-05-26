@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Domain\PastaRecipeServiceTests.cs" />
     <Compile Include="Domain\PastaRecipeTests.cs" />
+    <Compile Include="Infra\RecipeRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

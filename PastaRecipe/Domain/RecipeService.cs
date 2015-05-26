@@ -1,25 +1,29 @@
 namespace PastaRecipe.Domain
 {
     using System.Collections.Generic;
-    using System.Linq;
 
     public class RecipeService : IProvideRecipes, IOwnRecipes
     {
-        private IOwnRecipes recipesOwner;
+        private IOwnRecipes recipeRepository;
 
-        public RecipeService(IOwnRecipes recipesOwner)
+        public RecipeService(IOwnRecipes recipeRepository)
         {
-            this.recipesOwner = recipesOwner;
+            this.recipeRepository = recipeRepository;
         }
 
         public PastaRecipe GetRecipeFor(string pastaName)
         {
-            return this.recipesOwner.GetRecipeFor(pastaName);
+            return this.recipeRepository.GetRecipeFor(pastaName);
         }
 
         public IEnumerable<string> FindPastaWithRecipeIncludingTheIngredient(string ingredientName)
         {
-            return this.recipesOwner.FindPastaWithRecipeIncludingTheIngredient(ingredientName);
+            return this.recipeRepository.FindPastaWithRecipeIncludingTheIngredient(ingredientName);
+        }
+
+        public void AddRecipe(PastaRecipe newRecipe)
+        {
+            this.recipeRepository.AddRecipe(newRecipe);
         }
     }
 }

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\IOwnRecipes.cs" />
     <Compile Include="Domain\IProvideRecipes.cs" />
     <Compile Include="Domain\PastaRecipe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

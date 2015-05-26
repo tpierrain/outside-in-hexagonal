@@ -2,6 +2,7 @@
 
 namespace PastaRecipe.Console
 {
+    using PastaRecipe.Console.Infra;
     using PastaRecipe.Domain;
     using PastaRecipe.Infra;
 
@@ -11,7 +12,8 @@ namespace PastaRecipe.Console
         {
             System.Console.WriteLine("Starts the PastaRecipe service");
 
-            var pastaRecipeService = new RecipeService();
+            var recipeRepository = new RecipeRepository();
+            var pastaRecipeService = new RecipeService(recipeRepository);
             var commandLineArgumentAdapter = new CommandLineAdapter(pastaRecipeService);
 
             string enteredValue = null;

@@ -3,45 +3,23 @@ namespace PastaRecipe.Domain
     using System.Collections.Generic;
     using System.Linq;
 
-    public class RecipeService : IProvideRecipes
+    public class RecipeService : IProvideRecipes, IOwnRecipes
     {
-        private Dictionary<string, PastaRecipe> recipes;
+        private IOwnRecipes recipesOwner;
 
-        public RecipeService()
+        public RecipeService(IOwnRecipes recipesOwner)
         {
-            this.InitializeRecipes();
-        }
-
-        private void InitializeRecipes()
-        {
-            this.recipes = new Dictionary<string, PastaRecipe>
-                               {
-                                   { "gnocchi", PastaRecipe.Parse("gnocchi(eggs-potatoes-flour)") },
-                                   { "spaghetti", PastaRecipe.Parse("spaghetti(eggs-flour)") },
-                                   { "organic spaghetti", PastaRecipe.Parse("organic spaghetti(organic eggs-flour)") },
-                                   { "spinach farfalle", PastaRecipe.Parse("spinach farfalle(eggs-flour-spinach)") },
-                                   { "tagliatelle", PastaRecipe.Parse("tagliatelle(eggs-flour)") }
-                               };
+            this.recipesOwner = recipesOwner;
         }
 
         public PastaRecipe GetRecipeFor(string pastaName)
         {
-            return this.recipes[pastaName];
+            return this.recipesOwner.GetRecipeFor(pastaName);
         }
 
         public IEnumerable<string> FindPastaWithRecipeIncludingTheIngredient(string ingredientName)
         {
-            var result = new List<string>();
-
-            foreach (var recipe in this.recipes.Values)
-            {
-                if (recipe.Ingredients.Contains(ingredientName))
-                {
-                    result.Add(recipe.PastaName);
-                }
-            }
-
-            return result;
+            return this.recipesOwner.FindPastaWithRecipeIncludingTheIngredient(ingredientName);
         }
     }
 }

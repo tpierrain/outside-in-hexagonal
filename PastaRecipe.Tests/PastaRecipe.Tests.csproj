@@ -55,6 +55,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PastaRecipe.Console\PastaRecipe.Console.csproj">
+      <Project>{d5fd68b8-331e-443b-b643-67bc10a86520}</Project>
+      <Name>PastaRecipe.Console</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PastaRecipe\PastaRecipe.csproj">
       <Project>{9b13c2bc-f744-4a6d-9390-0cd82a6e314b}</Project>
       <Name>PastaRecipe</Name>

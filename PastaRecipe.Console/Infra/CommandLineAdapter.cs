@@ -6,21 +6,21 @@ namespace PastaRecipe.Infra
 
     public class CommandLineAdapter
     {
-        private readonly IProvideRecipes pastaRecipeService;
+        private readonly IProvideRecipes pastaRecipeProvider;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CommandLineAdapter"/> class.
         /// </summary>
-        /// <param name="pastaRecipeService">The pasta recipe service.</param>
-        public CommandLineAdapter(IProvideRecipes pastaRecipeService)
+        /// <param name="pastaRecipeProvider">The pasta recipe service.</param>
+        public CommandLineAdapter(IProvideRecipes pastaRecipeProvider)
         {
-            this.pastaRecipeService = pastaRecipeService;
+            this.pastaRecipeProvider = pastaRecipeProvider;
         }
 
         public string RequestRecipeFor(string pastaName)
         {
             // the simplest possible adapter on earth here; no need to translate model
-            var recipe = this.pastaRecipeService.GetRecipeFor(pastaName);
+            var recipe = this.pastaRecipeProvider.GetRecipeFor(pastaName);
 
             // adapt from the domain model to the output representation
             var output = string.Format("The recipe for the pasta '{0}' is '{1}'", recipe.PastaName, this.PrintIngredients(recipe));

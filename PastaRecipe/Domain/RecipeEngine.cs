@@ -2,11 +2,11 @@ namespace PastaRecipe.Domain
 {
     using System.Collections.Generic;
 
-    public class RecipeService : IProvideRecipes, IOwnRecipes
+    public class RecipeEngine : IProvideRecipes, IOwnRecipes
     {
         private IOwnRecipes recipeRepository;
 
-        public RecipeService(IOwnRecipes recipeRepository)
+        public RecipeEngine(IOwnRecipes recipeRepository)
         {
             this.recipeRepository = recipeRepository;
         }

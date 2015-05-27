@@ -12,9 +12,9 @@ namespace PastaRecipe.Console
         {
             System.Console.WriteLine("Starts the PastaRecipe service");
 
-            var recipeRepository = new RecipeRepository();
-            var pastaRecipeService = new RecipeService(recipeRepository);
-            var commandLineArgumentAdapter = new CommandLineAdapter(pastaRecipeService);
+            IOwnRecipes recipeRepository = new RecipeRepository();
+            var recipeEngine = new RecipeEngine(recipeRepository);
+            var commandLineArgumentAdapter = new CommandLineAdapter(recipeEngine);
 
             string enteredValue = null;
             while (enteredValue != "q")
